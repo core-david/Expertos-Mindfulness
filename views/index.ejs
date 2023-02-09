@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expertos Mindfulness</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+ 
+  <!-- Firebase -->
+  <script src="/__/firebase/6.1.1/firebase-firestore.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Open+Sans&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/cfb63fbe7e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Javascript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <!-- Header -->
+  <section class="color-section" id="header">
+
+    <!-- Navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand navbar-title" href="">Expertos en Mindfulness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#mision">Nosotros</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#proceso">Proceso</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#pricing">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Socios">Equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cta">Contacto</a>
+      </li>
+        </ul>
+      </div>
+    </nav>
+      
+    <div class="row">
+      <div class="col-lg-6 col-md-12 text-center">
+        <div class="header-title">
+          <h1>Productividad sin estrés, todos los días</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 ">
+        <img class="header-image img-fluid" src="images/logo-1.png" alt="goal">
+      </div>
+    </div>
+   </div>
+
+  </section>
+
+  <!-- Quienes somos -->
+  <section class="white-section" id="mision">
+    
+    <div class="row">
+      <div class="col-lg-6 col-md-12 ">
+        <div class="wrapper">
+        <div class="w-iframe">
+          <iframe class="video" height='465px' width='470px' src="https://www.youtube.com/embed/gNz-TZIuNwo" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-6 col-md-12 text-center">
+        <div class="who-title">
+          <h1>¿Quiénes Somos?</h1>
+        </div>
+        <p align="center" style="color:black; padding:5%;">Una empresa dedicada a la capacitación de alto impacto, a través del manejo del estrés, la mejora de la resiliencia y el desarrollo del liderazgo.</p>
+      </div>
+    </div>
+ 
+  </section>
+
+
+
+  <!-- Proceso -->
+  <section class="color-section" id="proceso">
+
+  
+    <h1>Proceso</h1>
+
+    <h6 class="proceso-subtitle">Nos adaptamos a la estructura organizacional de las empresas para ofrecerles soluciones a la medida y según sus necesidades.</h6>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3.5 col-md-6 d-flex align-items-stretch">
+          <div class="card mb-3 cardchar" >
+            <i class="icon-1 fa-sharp fa-solid fa-circle-exclamation fa-2x"></i>
+            <div class="card-body">
+              <h5 class="card-title">Problema</h5>
+              <p class="card-text">Reducción de la productividad por altos niveles de estrés, que amenazan la estabilidad de la empresa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3.5 col-md-6 d-flex align-items-stretch">
+          <div class="card mb-3 cardchar" >
+            <i class="icon-2 fa-solid fa-circle-check fa-2x"></i>
+            <div class="card-body">
+              <h5 class="card-title">Solución</h5>
+              <p class="card-text">Mejorar la interacción humana dentro de la empresa. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3.5 col-md-6 d-flex align-items-stretch">
+          <div class="card mb-3 cardchar">
+            <i class="icon-3 fa-sharp fa-solid fa-gears fa-2x"></i>
+            <div class="card-body">
+              <h5 class="card-title">Metodología</h5>
+              <p class="card-text">
+                1. Estrés
+                2. Liderazgo
+                3. Resiliencia
+                4. Clima Laboral
+                5. Comunicación Efectiva
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3.5 col-md-6  d-flex align-items-stretch">
+          <div class="card mb-3 cardchar">
+            <i class="icon-4 fa-solid fa-square-poll-vertical fa-2x"></i>
+            <div class="card-body">
+              <h5 class="card-title">Resultados</h5>
+              <p class="card-text">Aumento en la productividad, generación de un clima laboral agradable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center boton-proceso">
+        <h7 class="proceso-footer">Conoce más acerca de cómo podemos ayudar a tu empresa </h7>
+      </div>
+      <button onclick="window.location.href='/proceso'" type="button" class="w-100 btn btn-lg">Conoce Más</button>
+
+    </div>
+   
+  </section>
+
+  <!-- Cursos -->
+  <section class="white-section" id="pricing">
+  <h1 class="price-h2">Nuestros cursos</h1>
+  <p>Capacitación de clase mundial</p>
+
+  <div class="row justify-content-center">
+    <div class="pricing-column col-xl-3 col-md-6 col-sm-12 " >
+      <div class="card mb-4 rounded-3 shadow-lg">
+        <div class="card-header py-3">
+          <h4>Gestión del Estrés Laboral</h4>
+        </div>
+        <img src="images/estres.png" class=" img-fluid" >
+        <div class="card-body">
+          <h5 class=" fw-normal">Impacto positivo en el clima laboral.</h5>
+          <button onclick="window.location.href='cursos/estres'" type="button" class="w-100 btn btn-lg btn-outline-primary">¡Contrátanos!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column  col-xl-3 col-md-6 col-sm-12">
+      <div class="card mb-4 rounded-3 shadow-lg">
+        <div class="card-header py-3">
+          <h4 >Desarrollo de la Inteligencia Emocional</h4>
+        </div>
+        <img src="images/ie.png" class="card-img-top courses-image img-fluid">
+        <div class="card-body">
+          <h5 class="fw-normal">Generando ambientes favorables de trabajo.</h5>
+          <button onclick="window.location.href='cursos/ie'" type="button" class="w-100 btn btn-lg btn-outline-primary">¡Contrátanos!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-xl-3 col-md-6 col-sm-12" >
+      <div class="card mb-4 rounded-3 shadow-lg">
+        <div class="card-header py-3">
+          <h4 >Mindfulness para el Liderazgo Consciente</h4>
+        </div>
+        <img src="images/liderazgo.png" class="card-img-top courses-image img-fluid">
+        <div class="card-body">
+          <h5 class="fw-normal">Fortaleciendo tus recursos interiores para liderar con excelencia.</h5>
+          <button onclick="window.location.href='cursos/liderazgo'" type="button" class="w-100 btn btn-lg btn-outline-primary">¡Contrátanos!</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pricing-column col-xl-3 col-md-6 col-sm-12 ">
+      <div class="card mb-4 rounded-3 shadow-lg">
+        <div class="card-header py-3">
+          <h4 >Autorregulación para la Resiliencia</h4>
+        </div>
+        <img src="images/resiliencia.png" class="card-img-top courses-image img-fluid">
+        <div class="card-body">
+          <h5 class=" fw-normal">Estrategias de autotransformación para responder a los desafíos con inteligencia emocional.</h5>
+          <button onclick="window.location.href='cursos/resiliencia'" type="button" class="w-100 btn btn-lg btn-outline-primary">¡Contrátanos!</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="pricing-column col-xl-3 col-md-6 col-sm-12 align-center">
+      <div class="card mb-4 rounded-3 shadow-lg">
+        <div class="card-header py-3">
+          <h4 >Bases de la Comunicación Efectiva</h4>
+        </div>
+        <img src="images/liderazgo.png" class="card-img-top courses-image img-fluid">
+        <div class="card-body">
+          <h5 class=" fw-normal">Convirtiendo la comunicación en el motor de transformación de la empresa.</h5>
+          <button onclick="window.location.href='cursos/comunicacion'" type="button" class="w-100 btn btn-lg btn-outline-primary">¡Contrátanos!</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </section>
+
+  <!-- Testimonios -->
+  <section class="special-section" id="testimonials">
+    <div class="container-fluid">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text">«Me dirijo ante ustedes con total sinceridad ante la experiencia de los profundos y motivadores cambios que he logrado con el Diplomado en Mindfulness y Meditación Zen, dirigido por el Maestro Jaime Vargas. Ha sido una experiencia en la cuál nos colocamos sentados adoptando una postura lo más cómoda posible y cerramos los ojos, empezamos a respirar profundamente, apartando todo pensamiento, toda emoción, todo tipo de estrés, ya sea en el trabajo, en el hogar, en las diferentes áreas de estudios. ¡Los resultados saltan a la vista!. La Meditación es una área muy bella, hermosa y enriquecedora para obtener un desarrollo armonioso con nuestra Mente, Cuerpo y Alma. En mi caso particular, ha sido una experiencia asombrosa para forjar y establecer un estado de relajación, de armonía, de serenidad, de quietud mental, de Paz interior.»</h2>
+          <img class= "testimonial-image" src="images/testimonio-1.jpg" alt="dog-profile">
+          <em>Guillermo Fernández, Argentina</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">«Este taller me ayudó a elevar mi optimismo, positividad y motivación. Comprendí que la sensación de bienestar comienza con uno mismo. Es interesante poder conectar con otras personas y darse cuenta de que todos buscamos vivir un vida más plena. Un excelente taller que te impulsa a transformar tu vida.»</h2>
+          <img class="testimonial-image" src="images/testimonio-2.jpg" alt="lady-profile">
+          <em>Susana Montoya, México</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">«El Diplomado en Mindfulness y Meditación Zen, conducido por el Dr. Jaime Vargas, me ha ayudado a sentirme más tranquila, relajada, he logrado mayor claridad mental, concentración y enfoque. He experimentado menos ansiedad al permitirme fluir en la vida. He aprendido a vivir en el momento presente.»</h2>
+          <img class="testimonial-image" src="images/testimonio-3.jpg" alt="lady-profile">
+          <em>Lupita Álvarez, México</em>
+        </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"  >
+      <span class="carousel-control-next-icon" aria-hidden="false"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  </section>
+
+
+  <!-- Socios -->
+  <section class="white-section" id="Socios">
+
+    <div class="row">
+      <h1 class = "pricipal-socios "> Conoce al equipo</h1>
+      <h3> Socios fundadores</h3>
+      <div class=" col-lg-6 socios-box ">
+        <img src="images/JoseManuel.jpg" class = "socios-image" alt="Jose">
+        <h5 class="features-h3">José Manuel Fosado</h5>
+        <p>Director General</p>
+      </div>
+      <div class=" col-lg-6 socios-box ">
+        <img src="images/Jaime.jpg" class = "socios-image" alt="Jaime" >
+        <h5 class="features-h3">Jaime Vargas Espinoza</h5>
+        <p>Director General</p>
+      </div>
+      <!-- <div class=" col-sm socios-box ">
+        <img src="images/Ismael.jpg" class = "socios-image" alt="Ismael">
+        <h5 class="features-h3">Ismael Medina Orozco</h5>
+        <p>Director General</p>
+      </div> -->
+    </div>
+
+    <div class="row">
+      <h3> Equipo de coaching y capacitación</h3>
+
+      <div class="col-xl-2 col-lg-4 col-md-6 socios-box">
+        <img src="images/Rosa.jpg" class = "equipo-image" alt="Rosa">
+        <h5 class="features-h3">Rosa Fierro Campos</h5>
+        <p>Instructora</p>
+      </div>
+      <div class="col-xl-2 col-lg-4 col-md-6 socios-box">
+        <img src="images/Claudia.jpg" class = "equipo-image" alt="Claudia">
+        <h5 class="features-h3">Claudia Andrea González</h5>
+        <p>Instructora</p>
+      </div>
+      <div class="col-xl-2 col-lg-4 col-md-6 socios-box ">
+        <img src="images/Mony.jpg" class = "equipo-image" alt="Mónica">
+        <h5 class="features-h3">Mónica García</h5>
+        <p>Instructora</p>
+      </div>
+      <div class="col-xl-2 col-lg-4 col-md-6 socios-box">
+        <img src="images/Maria.jpg" class = "equipo-image" alt="María">
+        <h5 class="features-h3">María del Carmen Hanley</h5>
+        <p>Instructora</p>
+      </div>
+      <div class="col-xl-2 col-lg-4 col-md-6 socios-box ">
+        <img src="images/Ana.jpg" class = "equipo-image" alt="Ana">
+        <h5 class="features-h3">Ana Rosa Beristaín Hernández</h5>
+        <p>Instructora</p>
+      </div>
+      <div class="col-xl-2 col-lg-4 col-md-6 socios-box ">
+        <img src="images/Paulina.png" class = "equipo-image" alt="Paulina">
+        <h5 class="features-h3">Paulina Cerna Huici</h5>
+        <p>Instructora</p>
+      </div>
+      
+    </div>
+
+  </section>
+  
+<!-- Press -->
+  <section class="color-section" id="press">
+    <div class="container-fluid ">
+    <h1>Empresas Aliadas</h1>
+    <a href="https://mariposas.org.mx/" target = "_blank">
+      <img class="press-logo" src="images/Logo_mariposas.png" alt="tnw-logo">
+    </a>
+    <a href="https://www.youtube.com/" target = "_blank">
+      <img class="press-logo" src="images/logo-Vida.png" alt="tc-logo">
+    </a>
+    </div>
+  </section>
+
+  
+
+
+  <!-- Call to Action -->
+
+  <section class="color-section" id="cta">
+    <div class="container-fluid">
+      <h2 class="cta-h2">Contáctanos!</h2>
+    </div>  
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <div class="container-fluid">
+  <footer id="footer">
+    <i class="icon-footer fa-brands fa-twitter"></i>
+    <i class="icon-footer fa-brands fa-facebook-f"></i>
+    <i class="icon-footer fa-brands fa-instagram"></i>
+    <i class="icon-footer fa-solid fa-envelope"></i>
+    <p>© Copyright - Expertos en Mindfulness y Bienestar Pleno</p>
+  </footer>
+  </div>  
+
+
+</body>
+
+</html>
