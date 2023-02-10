@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.listen(3000);
+app.listen(5000);
 
 app.set('view engine', 'ejs');
 
@@ -36,3 +36,5 @@ app.get('/cursos/ie', (req, res) =>{
 app.get('/cursos/comunicacion', (req, res) =>{
     res.render('cursos/comunicacion')
 });
+
+module.exports = app
