@@ -2,25 +2,10 @@ const express = require('express');
 
 const app = express();
 
-// app.get('/api', (req, res) => {
-//     const path = `/api/item/${v4()}`;
-//     res.setHeader('Content-Type', 'text/html');
-//     res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
-//     res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
-// });
-  
-// app.get('/api/item/:slug', (req, res) => {
-// const { slug } = req.params;
-// res.end(`Item: ${slug}`);
-// });
-
-app.listen(3000);
-
 app.set('view engine', 'ejs');
 app.set('views', 'public/views');
 
 app.use(express.static('public'));
-
 
 app.get('/', (req, res) => {
     res.render('index')
@@ -30,23 +15,16 @@ app.get('/proceso', (req, res) => {
     res.render('proceso')
 });
 
-app.get('/cursos/estres', (req, res) =>{
-    res.render('cursos/estres')
-});
+app.get('/cursos/:id', (req, res) => {
+    const id = req.params.id;
 
-app.get('/cursos/liderazgo', (req, res) =>{
-    res.render('cursos/liderazgo')
-});
+    res.render(`cursos/${id}`, (err) => {
+        if (err) {
+            res.status(404).sendFile(`${process.cwd()}/public/views/404.html`)
+        } else {
+            res.status(200).render(`cursos/${id}`)
+        }
+    })
+})
 
-app.get('/cursos/resiliencia', (req, res) =>{
-    res.render('cursos/resiliencia')
-});
-
-app.get('/cursos/ie', (req, res) =>{
-    res.render('cursos/ie')
-});
-
-app.get('/cursos/comunicacion', (req, res) =>{
-    res.render('cursos/comunicacion')
-});
-
+app.listen(3000, () => console.log("App is listening in http://localhost:3000"));
