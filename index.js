@@ -1,4 +1,4 @@
-const express = require('express');
+import express from "express" 
 
 const app = express();
 
@@ -7,11 +7,11 @@ app.set('views', 'public/views');
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
     res.render('index')
 });
 
-app.get('/proceso', (req, res) => {
+app.get('/proceso', (_, res) => {
     res.render('proceso')
 });
 
