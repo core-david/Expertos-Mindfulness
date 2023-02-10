@@ -27,4 +27,4 @@ app.get('/cursos/:id', (req, res) => {
     })
 })
 
-app.listen(3000, () => console.log("App is listening in http://localhost:3000"));
+app.listen(process.env.PORT || 3000);
